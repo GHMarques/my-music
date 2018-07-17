@@ -2,7 +2,8 @@
 Implementação da atividade sugerida no link: https://github.com/fegemo/my-music/blob/statement-only/README.md#estudo-dirigido
 
 
-Instalação
+Instalação:
+
  Caso queira iniciar um projeto ionic do zero:
   1) coloque no mesmo diretório os arquivos: docker-compose.yml, Dockerfile e package.json.
   2) execute o comando (a execução pode demorar alguns minutos): 
