@@ -1,0 +1,24 @@
+<ion-view view-title="Playlist">
+  <ion-content>
+    <h1>{{playlist.title}}</h1>
+    <h3 class="tab">Criador</h3>
+    <p class="tab1"><b>Nome: </b>{{playlist.creator.name}}</p>
+    <p class="tab1"><b>Email: </b>{{playlist.creator.email}}</p>
+    <h3 class="tab">Músicas</h3>
+    <div class="bar bar-header item-input-inset">
+        <label class="item-input-wrapper">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input ng-model="search" type="search" placeholder="Buscar">
+        </label>
+      </div>
+      <ion-list>
+        
+        <ion-item ng-repeat="music in playlist.songs | filter: search | orderBy:'title'">
+          <div class="row">
+            <div class=".col-offset-10"><img ng-src="{{music.albumArtURL}}" alt="Imagem do album" class="imageAlbum"/></div>
+            <div class="col col-center"><b>Música:</b> {{music.title}}<br/><b>Album:</b> {{music.album}}<br/><b>Banda:</b> {{music.artist}}</div>
+          </div>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>
