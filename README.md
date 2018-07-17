@@ -18,15 +18,15 @@ Instalação
   ````
    4) Para iniciar o Cordova execute:
   ````
-  cd dockerized-ionic-app
+  cd my-music
   cordova plugin add cordova-plugin-device --save  && cordova plugin add cordova-plugin-console --save  && cordova plugin add cordova-plugin-whitelist --save && cordova plugin add cordova-plugin-splashscreen --save && cordova plugin add cordova-plugin-statusbar --save && cordova plugin add ionic-plugin-keyboard --save
   cordova platform add browser --save
   ````
    5) Reorganize os arquivos através do comando:
   ````
   cd ..
-  mv dockerized-ionic-app/ .
-  rmdir dockerized-ionic-app/
+  mv my-music/ .
+  rmdir my-music/
 
   ````
    6) Para manter as alterações realizadas:
